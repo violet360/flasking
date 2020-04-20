@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+do you really want to delete the user?
+<span class="glyphicon glyphicon-search" aria-hidden="false"></span>
+<div class="container">
+	<a href="{{ url_for('delete', x = usr) }}">ok</a>
+	<a href="{{ url_for('view') }}">nope</a>
+</div>
+{% endblock %}
